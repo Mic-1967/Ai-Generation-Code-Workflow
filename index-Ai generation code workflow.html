@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Accordion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="accordion-item">
+    <button class="accordion-header" aria-expanded="false"
+<aria-controls="content1" id="header1">
+         <span>Section 1</span>
+         <span class="icon">+</span>
+       </button>
+       <div class="accordion-content" id="content1"
+role="region" aria-labelledby="header1">
+        <p>This is the content of section 1.</p>
+      </div>      
+    </div>
+    <div class=" accordion-item">
+      <button class="accordion header" aria-expandable="false"
+aria-controls="content2" id="header2">
+        <span>Section 2</span> 
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content" id="content2"
+role="region" aria-labelledby="header2"
+        <p>This is the content of section 2./p>
+      </div>     
+    <div class="accordion-item"> 
+      <button class="accordion-header" aria-expanded="false"
+aria-controls="content3" id="header3">
+        <span>Section 3</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content" id="content3"
+role="region" aria-labelledby="header3">
+        <p>This is the content of Section 3.</p>       
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
